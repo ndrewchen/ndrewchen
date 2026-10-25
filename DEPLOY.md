@@ -33,17 +33,16 @@ nothing to overspend. The only cost is the domain renewal at Squarespace Domains
 
 | Host | Type | Value |
 |---|---|---|
-| `@` | A | `185.199.108.153` |
-| `@` | A | `185.199.109.153` |
-| `@` | A | `185.199.110.153` |
-| `@` | A | `185.199.111.153` |
-| `@` | AAAA | `2606:50c0:8000::153` |
-| `@` | AAAA | `2606:50c0:8001::153` |
-| `@` | AAAA | `2606:50c0:8002::153` |
-| `@` | AAAA | `2606:50c0:8003::153` |
+| `@` | ALIAS | `ndrewchen.github.io` |
 | `www` | CNAME | `ndrewchen.github.io` |
 
-These replace the Squarespace parking records (the `@` A record `198.49.23.144` and `www` → `ext-sq.squarespace.com`).
+The ALIAS record makes Squarespace hand out GitHub Pages' current IPv4 and IPv6 addresses, so it stays
+correct if GitHub ever changes them. These two records replaced the Squarespace parking records. The
+`_domainconnect` record is Squarespace's one-click setup helper; leave it.
+
+If you ever move DNS to a provider without ALIAS support, use these instead of the ALIAS record:
+A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+(optionally AAAA `2606:50c0:8000::153` through `2606:50c0:8003::153`).
 
 ## Who can see what
 
