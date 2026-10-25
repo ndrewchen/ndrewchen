@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    text { fill: #22242a; }
+    @media (prefers-color-scheme: dark) { text { fill: #e7e6e3; } }
+  </style>
+  <text x="16" y="24" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34">a</text>
+</svg>
